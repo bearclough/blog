@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Beaclough</title>
+    <link>http://replace-this-with-your-domain.com/post/</link>
+    <description>Recent content in Posts on Beaclough</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Mar 2016 12:10:32 -0700</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://replace-this-with-your-domain.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2016 Books Read</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/2016-books-read/</link>
+      <link>http://replace-this-with-your-domain.com/post/2016-books-read/</link>
       <pubDate>Sat, 19 Mar 2016 12:10:32 -0700</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/2016-books-read/</guid>
+      <guid>http://replace-this-with-your-domain.com/post/2016-books-read/</guid>
       <description>&lt;p&gt;Furiously Happy - &lt;em&gt;Jenny Lawson&lt;/em&gt;
 Consider The Fork - &lt;em&gt;Bee Wilson&lt;/em&gt;&lt;/p&gt;
 </description>
