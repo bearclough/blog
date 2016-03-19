@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beaclough</title>
-    <link>http://replace-this-with-your-domain.com/</link>
+    <link>https://bearclough.github.io/blog/</link>
     <description>Recent content on Beaclough</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Mar 2016 12:10:32 -0700</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-domain.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bearclough.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2016 Books Read</title>
-      <link>http://replace-this-with-your-domain.com/post/2016-books-read/</link>
+      <link>https://bearclough.github.io/blog/post/2016-books-read/</link>
       <pubDate>Sat, 19 Mar 2016 12:10:32 -0700</pubDate>
       
-      <guid>http://replace-this-with-your-domain.com/post/2016-books-read/</guid>
+      <guid>https://bearclough.github.io/blog/post/2016-books-read/</guid>
       <description>&lt;p&gt;Furiously Happy - &lt;em&gt;Jenny Lawson&lt;/em&gt;
 Consider The Fork - &lt;em&gt;Bee Wilson&lt;/em&gt;&lt;/p&gt;
 </description>
