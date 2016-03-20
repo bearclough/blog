@@ -70,15 +70,15 @@ h2 {
 }
 
 .profile #wrapper {
-	padding: 100px 40px 0px;
+	padding: 40px 40px 0px;
 	max-width: 600px;
 	margin: 0 auto;
 }
 
 .profile #header {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	/*border-bottom: 1px solid #FF8A65;*/
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 	text-align: center;
 	position: relative;
 }
@@ -94,18 +94,21 @@ h2 {
 .profile h1 {
 	font-weight: 400;
 	letter-spacing: 0px;
-	font-size: 20px;
 	color: #222;
+	font: 300 36px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 .profile h2 {
 	font-size: 20px;
 	  font-weight: 300;
-	  color: #aaa;
+	  color: #b2b9be;
 	  margin-top: 10px;
 	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	  font-style: normal;
-
+	  font: normal 13px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	  text-transform: uppercase;
+	  letter-spacing: 2px;
+	  display: inline-block;
 }
 
 nav.main-nav {
@@ -125,7 +128,7 @@ nav.main-nav a {
 	top: 8px;
 	right: 6px;
 	padding: 8px 12px;
-	color: #5badf0;
+	color: #5694f1;
 	font-size: 13px;
 	/*font-weight: bold;*/
 	line-height: 1.35;
@@ -141,7 +144,7 @@ nav.main-nav a.cta {
 #wrapper {
   max-width: 600px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  padding: 20px 40px 100px 40px;
 }
 
 #wrapper.home {
@@ -375,7 +378,7 @@ img {
 Post List
 =========================================== */
 #post-list,#archive-list {
-	margin-top: 100px;
+	margin-top: 25px;
 }
 
 #post-list li,#archive-list li {
@@ -440,11 +443,11 @@ Post List
 
 /* Post Page */
 #header {
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 }
 
 .post {
-	margin: 80px 0 0 0;
+	margin: 40px 0 0 0;
 }
 
 #post-meta {
