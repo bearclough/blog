@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Bearclough">
+		<meta name="description" content="Describe your website">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>Cross Platform Mobile Musings &middot; Beaclough</title>
+		<link rel="shortcut icon" href="http://www.stephaniefairclough.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/style.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/highlight.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/monosocialiconsfont.css">
+		
+	</head>
+
+<body>
+   <nav class="main-nav">
+	
+	
+		<a href='http://www.stephaniefairclough.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://www.stephaniefairclough.com/about'>About</a>
+	
+
+	
+</nav>
+
+	<section id="wrapper">
+		<article class="post">
+			<header>
+				<h1>Cross Platform Mobile Musings</h1>
+				<h2 class="headline">June 30, 2015</h2>
+			</header>
+			<section id="post-body">
+				
+
+<p>Mobile has taken over the world. Everyone is embracing mobile as a space they must either start in or occupy.</p>
+
+<p>But what does this means for developers and businesses trying to create a competitive product. Here are my thoughts on the matter. How I would proceed with my own products.</p>
+
+<h1 id="product-requirements:527b8d1e95f1eb0977f5ba52485512b1">Product Requirements</h1>
+
+<h2 id="ios-app:527b8d1e95f1eb0977f5ba52485512b1">iOS App</h2>
+
+<ul>
+<li>Communication either RESTful or realtime with the server</li>
+<li>Local storage of data</li>
+<li>Native UI</li>
+<li>Elegant design and <strong>fantastic</strong> user experience</li>
+<li>Test suite unit, UI, and end to end integration tests</li>
+</ul>
+
+<h2 id="android-app:527b8d1e95f1eb0977f5ba52485512b1">Android App</h2>
+
+<ul>
+<li>Communication either RESTful or realtime with the server</li>
+<li>Local storage of data</li>
+<li>Native UI</li>
+<li>Elegant design and <strong>fantastic</strong> user experience</li>
+<li>Test suite unit, UI, and end to end integration tests</li>
+</ul>
+
+<h2 id="server:527b8d1e95f1eb0977f5ba52485512b1">Server</h2>
+
+<ul>
+<li>Stores and secures data</li>
+<li>Provides authentication (Facebook, Google +, and native to your product.  These are at a minimum)</li>
+<li>Easy rapid scalability</li>
+<li>RESTful API</li>
+<li>Realtime API whether its publication/subscription or synchronization (Not a hard requirement yet but it will be in the next year or two as websockets take over the world)</li>
+<li>Front End UI to be accessed from the desktop browser and the mobile browser</li>
+<li>Test suite unit, UI, and end to end integration tests</li>
+</ul>
+
+<h2 id="strategies:527b8d1e95f1eb0977f5ba52485512b1">Strategies</h2>
+
+<p>Phew and thats just to begin with!  If you choose to drop either Android, iOS, or the browser based interface you&rsquo;ll alienate a large percentage of your user population.  The Android/iOS split is arguably <sup>50</sup>&frasl;<sub>50</sub> and the percentage of people that will refuse to download your app and instead use your web site is pretty large as well.  I don&rsquo;t know about you but as I read the list I just see $$$$$$$$$ going off in my head as well as the technical debt down the road.</p>
+
+<p>Above all, put your time and money into what makes the most sense for your business.  Not what the new hotness is.</p>
+
+<h3 id="no-money-but-want-to-reach-the-most-users:527b8d1e95f1eb0977f5ba52485512b1">No Money But Want To Reach The Most Users</h3>
+
+<p>Build the server and web UI first.  Ignore native mobile and cross platform mobile.  Work on a solid backend server and a fast but simple UI.  That UI should still be responsive and easily usable on even small mobile devices.  Stay away from too much css trickery and JavaScript magic.</p>
+
+<p>You&rsquo;ll spend your energy building a backend that can eventually be used across all clients.  And, the web UI will reach the largest number of users since the web is platform agnostic.</p>
+
+<p>Once the product starts bringing in some money, start investing in native mobile and desktop clients.  Don&rsquo;t hesitate to waste time on cross platform apps thats what the mobile web UI is for.  No point in packaging it up and wasting memory on a user&rsquo;s phone.</p>
+
+<p><em>Note</em>: There are some products that require the app to be native. Whether they need to take advantage of GPS, camera, video, UI responsiveness, graphics, local storage, etc.  At that point, native apps should come first.  Server side may need to be something like firebase or the open sourced version of Parse.  Whatever takes the least amount of time to bring the product to its base level of functionality.</p>
+
+<h3 id="doesn-t-require-a-backend-server:527b8d1e95f1eb0977f5ba52485512b1">Doesn&rsquo;t Require a Backend Server</h3>
+
+<p>Very few products fall into this category, but if they do go to town on building amazing native UI&rsquo;s.  Spend the time crafting the best user experience.</p>
+
+<h3 id="enough-money-to-pour-down-the-drain:527b8d1e95f1eb0977f5ba52485512b1">Enough Money to Pour Down the Drain</h3>
+
+<p>Build everything server, web UI, mobile UI, native mobile, and native desktop.  But this scenario rarely ever happens.</p>
+
+			</section>
+		</article>
+		<footer id="post-meta" class="clearfix">
+			<a href="https://twitter.com/stephfairclough">
+					<img class="avatar" src="http://www.stephaniefairclough.com/images/avatar.png">
+					<div>
+						<span class="dark">Bearclough</span>
+						<span>Living human being</span>
+					</div>
+				</a>
+		</footer>
+
+		
+
+		<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/tech-dream-job-advice/">Make Your Tech Dream Job A Reality<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2016-books-read/">2016 Books Read<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2015-books-read/">2015 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/meteor-app-structure-learnings/">Meteor App Structure Learnings<aside class="dates">Jul 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/cross-platform-mobile/">Cross Platform Mobile Musings<aside class="dates">Jun 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/websockets-meteor-future-of-development/">WebSockets, Meteor, and the Future of Development<aside class="dates">May 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2014-books-read/">2014 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+</ul>
+		<footer id="footer">
+    
+        
+<div id="social">
+    
+    <a class="symbol" href="https://github.com/bearclough">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/stephfairclough">
+        circletwitterbird
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Bearclough
+    
+    </p>
+</footer>
+
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.stephaniefairclough.com/js/main.js"></script>
+<script src="http://www.stephaniefairclough.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

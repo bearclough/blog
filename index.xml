@@ -6,8 +6,46 @@
     <description>Recent content on Beaclough</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Mar 2016 12:10:32 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Mar 2016 13:48:59 -0700</lastBuildDate>
     <atom:link href="http://www.stephaniefairclough.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Make Your Tech Dream Job A Reality</title>
+      <link>http://www.stephaniefairclough.com/post/tech-dream-job-advice/</link>
+      <pubDate>Sat, 19 Mar 2016 13:48:59 -0700</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/tech-dream-job-advice/</guid>
+      <description>
+
+&lt;p&gt;Here&amp;rsquo;s some advice that was given to me a few years back.  It takes considerable time (at least a year) and effort, but it worked for me.  The advice holds true if you are unemployed, or gainfully employed but not working with the technologies you want to be.&lt;/p&gt;
+
+&lt;h2 id=&#34;build-things-you-want-to-see-in-the-world:e5e2cf97fe43b4694ad6b8aee0dc4f79&#34;&gt;Build things you want to see in the world&lt;/h2&gt;
+
+&lt;p&gt;Pick a language or platform that you&amp;rsquo;re interested in working with and start making things.  Whether its hardware, embedded, web, mobile, desktop, or augmented reality start building and keep building.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t know what you want to see in the world find a non-profit and see if they need any tech work done.  They&amp;rsquo;ll be thrilled to have help.  Its a real world problem and your work will get more exposure than it would get on its own.  You&amp;rsquo;ll also start making personal connections with people (see point #3).&lt;/p&gt;
+
+&lt;h2 id=&#34;people-don-t-get-jobs-through-their-resumes-they-get-jobs-through-people:e5e2cf97fe43b4694ad6b8aee0dc4f79&#34;&gt;People don&amp;rsquo;t get jobs through their resumes they get jobs through people&lt;/h2&gt;
+
+&lt;p&gt;You can apply and apply to hundreds of job postings for months and months and not get anywhere.  But, as soon as you know the hiring manager you&amp;rsquo;ll get an interview faster than you thought possible.&lt;/p&gt;
+
+&lt;p&gt;Go to meetups. Yes this takes time and effort.  No you won&amp;rsquo;t meet people the first time you go, but after a while you&amp;rsquo;ll start to recognize faces and people will recognize you.&lt;/p&gt;
+
+&lt;p&gt;Most meetups are just fronts to recruit people for jobs.  You get to meet the people that will hire you and get a feel for the place you may work at.  There&amp;rsquo;s less stress than an interview and your judgement won&amp;rsquo;t be as clouded.&lt;/p&gt;
+
+&lt;p&gt;Go out with everyone after the meetup is over. The talk is just a precursor, the main event is the socializing that takes place afterwards.&lt;/p&gt;
+
+&lt;h2 id=&#34;share-with-others-what-you-are-doing:e5e2cf97fe43b4694ad6b8aee0dc4f79&#34;&gt;Share with others what you are doing&lt;/h2&gt;
+
+&lt;p&gt;At a minimum you should be writing about the things you are learning and building on a blog.  Post your resume/cv in plain text as a static page.  Ensure that your blog is able to be indexed by search engines.&lt;/p&gt;
+
+&lt;p&gt;Additionally, if you choose to do so post your code on GitHub. In many ways, your GitHub profile is your professional portfolio.  If you don&amp;rsquo;t like the idea of open sourcing, build things and sell them.  That way you have something to show that demonstrates your skills, and may even make you money.&lt;/p&gt;
+
+&lt;p&gt;Finally once you&amp;rsquo;ve been making amazing things you want to see in the world and sharing your knowledge with others, ask to start speaking at meetups. You&amp;rsquo;ll be seen as a thought leader and highly hireable.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;And, remember most people miss opportunities because they&amp;rsquo;re disguised as work.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2016 Books Read</title>
@@ -18,6 +56,317 @@
       <description>&lt;p&gt;Furiously Happy - &lt;em&gt;Jenny Lawson&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Consider The Fork - &lt;em&gt;Bee Wilson&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2015 Books Read</title>
+      <link>http://www.stephaniefairclough.com/post/2015-books-read/</link>
+      <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/2015-books-read/</guid>
+      <description>&lt;p&gt;The One Thing - &lt;em&gt;Gary Keller&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lives in Ruins: Archaeologists and the Seductive Lure of Human Rubble - &lt;em&gt;Marilyn Johnson&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bone Season Book 2 - &lt;em&gt;Samantha Shannon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Prince Lestat - &lt;em&gt;Anne Rice&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Girl With All The Gifts - &lt;em&gt;Mike Carey&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Meteor App Structure Learnings</title>
+      <link>http://www.stephaniefairclough.com/post/meteor-app-structure-learnings/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/meteor-app-structure-learnings/</guid>
+      <description>
+
+&lt;p&gt;Package based apps are easier to manage than monoliths.  All related functionality should be in its own package.&lt;/p&gt;
+
+&lt;h1 id=&#34;list-o-packages:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;List O&amp;rsquo; Packages&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lib&lt;/strong&gt; Contains global namespace and 3rd party dependencies.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Layout&lt;/strong&gt; Includes shared views used by the entire application such as the layout, menu, footer, header, sidebar, navigation.  (HTML, CSS, &amp;amp; JS) Allows you to switch site wide templates for different user types such as admins.  Site wide styling should be included here as well.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Homepage&lt;/strong&gt; All files necessary for your homepage and publicly accessible sub pages such as pricing, contact, about pages etc. (HTML, CSS, &amp;amp; JS).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Management&lt;/strong&gt; Login, signup, email verification, user profiles, linking accounts, SSO configurations, uploading profile pictures should all be grouped together.  If your app requires groups of users (followers, friends, family, organizations) the creation and management of these should be handled in a separate package that uses the user management package.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Admin&lt;/strong&gt; If your app isn&amp;rsquo;t trivial chances are you will need an admin package to manage user accounts, billing, permissions, roles, organizations, data, performance and so forth.  In addition, you may have end users that are admins not to the entire application but to their organization.  Its best to create a separate package for these admins.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collections&lt;/strong&gt; For each group of related collections include definitions, schemas, allow &amp;amp; deny behavior, publications, templates (HTML, CSS, &amp;amp; JS), and related meteor methods.  This allows you to import your collection behavior into other parent collections and features independently.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Features&lt;/strong&gt; Specific to your app. Logical separation of app functionality.  Features will tie various collections together.  The feature package will import various collection and library packages.  Feature packages will include templates (HTML, CSS, &amp;amp; JS) that allow users to interact with various collections and meteor methods that operate between collections.  Most importantly splitting out features should make each of them more testable and the interactions between features clearer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library&lt;/strong&gt; Reusable in any app.  Generic packages that provide functionality of reusable chunks of code such as file pickers, video players, string manipulation libraries, RESTful service clients, ui frameworks, autoform generators, deployment helpers etc.  Essentially any group of related meteor methods and templates that can be reused across apps.  Occasionally feature packages can evolve into library packages.  And, to be honest that should be your goal when writing a feature library to make it as standalone as possible.  Almost all packages in atmosphere, I consider library packages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;routes:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;Routes&lt;/h1&gt;
+
+&lt;p&gt;Routes should be on a per package basis.  The home package will have the base route &amp;ldquo;/&amp;rdquo; and all other packages will have routes specific to them.  Taking it a step further each package should use the same route group with the prefix of the package name starting the route path.&lt;/p&gt;
+
+&lt;p&gt;An example would be the admin package will have an admin route group and all routes will have &amp;lsquo;/admin&amp;rsquo; prepended to the path.&lt;/p&gt;
+
+&lt;h1 id=&#34;publications-subscriptions:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;Publications &amp;amp; Subscriptions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Publications&lt;/strong&gt; should be placed in the appropriate collection package.  Occasionally feature packages can create publications only they can use.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subscriptions&lt;/strong&gt; Can go either in feature packages or collection packages.&lt;/p&gt;
+
+&lt;h4 id=&#34;namespacing:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;Namespacing&lt;/h4&gt;
+
+&lt;p&gt;Create a namespace per package.  That way everything isn&amp;rsquo;t in the global namespace it allows for visual separation of dependencies. Yes, I know it gets verbose and some of you out there disdain verbosity.  I believe verbosity with purpose leads to self documenting code that is easier to return to months later and thus easier to onboard new devs to.  Don&amp;rsquo;t like it thats fine, you don&amp;rsquo;t have to namespace, I just hope I never have to take over your project.&lt;/p&gt;
+
+&lt;h4 id=&#34;tests-i-know-buzkill:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;Tests &amp;hellip; I know buzkill&lt;/h4&gt;
+
+&lt;p&gt;Yes my least favorite part of building things.  If you break your app into packages it will be easier to test.  Each package should have its own set of self contained tests.&lt;/p&gt;
+
+&lt;h4 id=&#34;round-up-of-prior-art:593f67c5f0cbf1d5eb5562a0e19c051b&#34;&gt;Round Up Of Prior Art&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;The Sacred Texts For Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.meteor.com/#/full/packagedefinition&#34;&gt;Meteor Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://themeteorchef.com/recipes/writing-a-package/&#34;&gt;The Meteor Chef - Writing A Package&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Best Practices&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://meteor.redandivory.com/#/&#34;&gt;Red &amp;amp; Ivory - Building Large Scale Meteor Apps Deck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cjsauer/meteor-fresh&#34;&gt;Meteor Fresh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.matb33.me/2013/09/05/meteor-project-structure.html&#34;&gt;Matb33&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.telescopeapp.org/blog/telescope-package-based-architecture/&#34;&gt;Telescope Package Based Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://experimentsinmeteor.com/package-based-architecture/&#34;&gt;Converting To A Package Based Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cross Platform Mobile Musings</title>
+      <link>http://www.stephaniefairclough.com/post/cross-platform-mobile/</link>
+      <pubDate>Tue, 30 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/cross-platform-mobile/</guid>
+      <description>
+
+&lt;p&gt;Mobile has taken over the world. Everyone is embracing mobile as a space they must either start in or occupy.&lt;/p&gt;
+
+&lt;p&gt;But what does this means for developers and businesses trying to create a competitive product. Here are my thoughts on the matter. How I would proceed with my own products.&lt;/p&gt;
+
+&lt;h1 id=&#34;product-requirements:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Product Requirements&lt;/h1&gt;
+
+&lt;h2 id=&#34;ios-app:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;iOS App&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Communication either RESTful or realtime with the server&lt;/li&gt;
+&lt;li&gt;Local storage of data&lt;/li&gt;
+&lt;li&gt;Native UI&lt;/li&gt;
+&lt;li&gt;Elegant design and &lt;strong&gt;fantastic&lt;/strong&gt; user experience&lt;/li&gt;
+&lt;li&gt;Test suite unit, UI, and end to end integration tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;android-app:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Android App&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Communication either RESTful or realtime with the server&lt;/li&gt;
+&lt;li&gt;Local storage of data&lt;/li&gt;
+&lt;li&gt;Native UI&lt;/li&gt;
+&lt;li&gt;Elegant design and &lt;strong&gt;fantastic&lt;/strong&gt; user experience&lt;/li&gt;
+&lt;li&gt;Test suite unit, UI, and end to end integration tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;server:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Stores and secures data&lt;/li&gt;
+&lt;li&gt;Provides authentication (Facebook, Google +, and native to your product.  These are at a minimum)&lt;/li&gt;
+&lt;li&gt;Easy rapid scalability&lt;/li&gt;
+&lt;li&gt;RESTful API&lt;/li&gt;
+&lt;li&gt;Realtime API whether its publication/subscription or synchronization (Not a hard requirement yet but it will be in the next year or two as websockets take over the world)&lt;/li&gt;
+&lt;li&gt;Front End UI to be accessed from the desktop browser and the mobile browser&lt;/li&gt;
+&lt;li&gt;Test suite unit, UI, and end to end integration tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;strategies:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Strategies&lt;/h2&gt;
+
+&lt;p&gt;Phew and thats just to begin with!  If you choose to drop either Android, iOS, or the browser based interface you&amp;rsquo;ll alienate a large percentage of your user population.  The Android/iOS split is arguably &lt;sup&gt;50&lt;/sup&gt;&amp;frasl;&lt;sub&gt;50&lt;/sub&gt; and the percentage of people that will refuse to download your app and instead use your web site is pretty large as well.  I don&amp;rsquo;t know about you but as I read the list I just see $$$$$$$$$ going off in my head as well as the technical debt down the road.&lt;/p&gt;
+
+&lt;p&gt;Above all, put your time and money into what makes the most sense for your business.  Not what the new hotness is.&lt;/p&gt;
+
+&lt;h3 id=&#34;no-money-but-want-to-reach-the-most-users:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;No Money But Want To Reach The Most Users&lt;/h3&gt;
+
+&lt;p&gt;Build the server and web UI first.  Ignore native mobile and cross platform mobile.  Work on a solid backend server and a fast but simple UI.  That UI should still be responsive and easily usable on even small mobile devices.  Stay away from too much css trickery and JavaScript magic.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll spend your energy building a backend that can eventually be used across all clients.  And, the web UI will reach the largest number of users since the web is platform agnostic.&lt;/p&gt;
+
+&lt;p&gt;Once the product starts bringing in some money, start investing in native mobile and desktop clients.  Don&amp;rsquo;t hesitate to waste time on cross platform apps thats what the mobile web UI is for.  No point in packaging it up and wasting memory on a user&amp;rsquo;s phone.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: There are some products that require the app to be native. Whether they need to take advantage of GPS, camera, video, UI responsiveness, graphics, local storage, etc.  At that point, native apps should come first.  Server side may need to be something like firebase or the open sourced version of Parse.  Whatever takes the least amount of time to bring the product to its base level of functionality.&lt;/p&gt;
+
+&lt;h3 id=&#34;doesn-t-require-a-backend-server:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Doesn&amp;rsquo;t Require a Backend Server&lt;/h3&gt;
+
+&lt;p&gt;Very few products fall into this category, but if they do go to town on building amazing native UI&amp;rsquo;s.  Spend the time crafting the best user experience.&lt;/p&gt;
+
+&lt;h3 id=&#34;enough-money-to-pour-down-the-drain:527b8d1e95f1eb0977f5ba52485512b1&#34;&gt;Enough Money to Pour Down the Drain&lt;/h3&gt;
+
+&lt;p&gt;Build everything server, web UI, mobile UI, native mobile, and native desktop.  But this scenario rarely ever happens.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WebSockets, Meteor, and the Future of Development</title>
+      <link>http://www.stephaniefairclough.com/post/websockets-meteor-future-of-development/</link>
+      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/websockets-meteor-future-of-development/</guid>
+      <description>
+
+&lt;p&gt;Note : The title may be a bit dramatic but I think WebSockets are primed to take over the world of development.  And, the idea of developing separate code for the server, web client, iOS client, and android versions of a product will become redundant.&lt;/p&gt;
+
+&lt;h2 id=&#34;restful-http:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;RESTful HTTP&lt;/h2&gt;
+
+&lt;p&gt;RESTful HTTP communication between a server and client is pretty much the norm now-a-days. SOAP (thankfully) has fallen to the side and become less common.  With RESTful communication the client requests data from the server and the server then responds.&lt;/p&gt;
+
+&lt;p&gt;The key here is that the client needs to actively &lt;strong&gt;request&lt;/strong&gt; data.  In order to get continuously updated data, the client pings the server every 30 secs, 10 secs, 1 sec, 1 millisecond etc. in order to get the latest data.  The server constantly fields these requests even if there isn&amp;rsquo;t any updates.&lt;/p&gt;
+
+&lt;p&gt;The client and the server need boilerplate code in order to establish this communication between the two.  Just look at any factory class on the client or controller class on the server.  It feels like half the time writing a client/server goes into getting and setting data on the client/server.  Handling any type of active synchronization is &lt;em&gt;tough problem&lt;/em&gt;.  To make matters worse, writing code dealing with RESTful HTTP calls is about as boring as it gets.&lt;/p&gt;
+
+&lt;h2 id=&#34;websockets:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;WebSockets&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/WebSockets&#34;&gt;WebSockets&lt;/a&gt; to the somewhat rescue &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;WebSockets allow for a two way always open connection between the client and the server.  This enables the client and server to communicate based on events rather than relying on polling.&lt;/p&gt;
+
+&lt;p&gt;You may be asking &amp;hellip; so what? does this even make a difference?  Let&amp;rsquo;s look at an example chat application together.&lt;/p&gt;
+
+&lt;h4 id=&#34;chat-application-with-rest:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;Chat Application With REST&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make a request every 1 second to check if there are any new messages.&lt;/li&gt;
+&lt;li&gt;Make a request for every chat that needs to be posted to the chat root.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;
+- Don&amp;rsquo;t need an open connection&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;
+- Not realtime
+- Tons of code to achieve any sort of illusion of sync behavior&lt;/p&gt;
+
+&lt;h4 id=&#34;chat-application-with-websockets:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;Chat Application With WebSockets&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Open WebSocket between the client and server&lt;/li&gt;
+&lt;li&gt;On the server handle messages from the client&lt;/li&gt;
+&lt;li&gt;On the client handle updates from the server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;
+- &lt;a href=&#34;http://realtimeconf.com/&#34;&gt;&lt;strong&gt;REALTIME WEB&lt;/strong&gt;&lt;/a&gt;
+- Easier event handling&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;
+- Harder to scale&lt;/p&gt;
+
+&lt;h2 id=&#34;meteor-https-www-meteor-com:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;&lt;a href=&#34;https://www.meteor.com/&#34;&gt;Meteor&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Mission Statement&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Writing software is too hard and it takes too long. It&amp;rsquo;s time for a new way to write software — especially application software, the user-facing software we use every day to talk to people and keep track of things.&lt;/p&gt;
+
+&lt;p&gt;This new way should be radically simple. It should make it possible to build a prototype in a day or two, and a real production app in a few weeks. It should make everyday things easy, even when those everyday things involve hundreds of servers, millions of users, and integration with dozens of other systems. It should be built on collaboration, specialization, and division of labor, and it should be accessible to the maximum number of people.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I think anyone who has ever written a piece of non trivial software can agree that writing good or even bad software is hard.  Meteor is a full stack JavaScript framework that encompasses both communication with a database as well as communication with the client (web, iOS, and even Android).&lt;/p&gt;
+
+&lt;p&gt;It utilizes a host of modern web technologies and packages them into incredibly easy to use packages.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;WebSockets (DDP)&lt;/li&gt;
+&lt;li&gt;MongoDB&lt;/li&gt;
+&lt;li&gt;Cordova (app wrapping for iOS and Android)&lt;/li&gt;
+&lt;li&gt;OAuth&lt;/li&gt;
+&lt;li&gt;Handlebars (they call it spacebars)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t believe me try their &lt;a href=&#34;https://www.meteor.com/install&#34;&gt;tutorial&lt;/a&gt; in under an hour you&amp;rsquo;ll get a host of things that could take you weeks to build without Meteor.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server&lt;/li&gt;
+&lt;li&gt;Communication with DB&lt;/li&gt;
+&lt;li&gt;Web Client&lt;/li&gt;
+&lt;li&gt;iOS Client&lt;/li&gt;
+&lt;li&gt;Android Client&lt;/li&gt;
+&lt;li&gt;Authentication (Google+, Facebook, LinkedIn, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over the past couple of months, I built a grocery list app that allows people to shop together in the same store and have the list dynamically update. Meteor has allowed me to develop apps that I use in my day to day life.  They may not be very marketable (algorithmically generated knitting patterns), but I can quickly make the software I want to see in the world.&lt;/p&gt;
+
+&lt;h2 id=&#34;future-of-development:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;Future of Development&lt;/h2&gt;
+
+&lt;p&gt;Right now there&amp;rsquo;s too much overhead to bring meaningful software into the world.  Just for an idea to be competitive in today&amp;rsquo;s market you need &amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A server (RESTful HTTP web service or allows connections with WebSockets)&lt;/li&gt;
+&lt;li&gt;An iOS app&lt;/li&gt;
+&lt;li&gt;An Android app&lt;/li&gt;
+&lt;li&gt;A web app&lt;/li&gt;
+&lt;li&gt;Easily scalable&lt;/li&gt;
+&lt;li&gt;Authentication (Google+ and Facebook are a must)&lt;/li&gt;
+&lt;li&gt;A test suite&lt;/li&gt;
+&lt;li&gt;An elegant design and intuitive user experience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We all know how much time it takes to write all of that &amp;hellip;.. months/years depends on how good you want everything to be. We all complain about bad software but it is crazy hard to write good software.&lt;/p&gt;
+
+&lt;p&gt;I think overtime as mobile become even more prevalent a write once use everywhere or a learn once write everywhere technology stack will become ubiquitous.&lt;/p&gt;
+
+&lt;p&gt;JavaScript as a language has potential.  Especially as frameworks such as Meteor and now native React gain popularity.  I admit that cross platform mobile is still no where close to native mobile.  But, Apple and Google will eventually have to cave for developers and give them a more efficient and simple experience for writing apps.&lt;/p&gt;
+
+&lt;p&gt;I see native apps converging with cross platform (JavaScript) apps.  In order for technology to really help the world, it needs to be 100 times easier to write and make available to the public.&lt;/p&gt;
+
+&lt;h4 id=&#34;stay-tuned:4d240865d4eb3ba7feecaecd590d0d95&#34;&gt;Stay Tuned&lt;/h4&gt;
+
+&lt;p&gt;Posts to follow on the different ways to reduce development time for mobile apps and the pros and cons for each.  This a space where there is room for growth and improvement. And, I really want to explore it more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2014 Books Read</title>
+      <link>http://www.stephaniefairclough.com/post/2014-books-read/</link>
+      <pubDate>Tue, 30 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.stephaniefairclough.com/post/2014-books-read/</guid>
+      <description>&lt;p&gt;Age Of Miracles - &lt;em&gt;Karen Thompson Walker&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Crucial Conversations - &lt;em&gt;Kerry Patterson&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Alif The Unseen - &lt;em&gt;G. Willow Wilson&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Discovery Of Witches (#1, #2, #3) - &lt;em&gt;Deborah Harkness&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Amusing Ourselves To Death - &lt;em&gt;Neil Postman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Drunken Botanist - &lt;em&gt;Amy Stewart&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Power Of Habits - &lt;em&gt;Charles Duhigg&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Good to Great - &lt;em&gt;James C. Collins&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Fault Is In Our Stars - &lt;em&gt;John Green&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;An Astronauts Guide To Life On Earth - &lt;em&gt;Chris Hadfield&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Story Of The Human Body - &lt;em&gt;Daniel Lieberman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Overwhelmed - &lt;em&gt;Brigid Schulte&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bad Feminist - &lt;em&gt;Roxane Gay&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes Please - &lt;em&gt;Amy Poehler&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Station Eleven - &lt;em&gt;Emily St. John Mandel&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Growth Mindset - &lt;em&gt;Carol Dweck&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

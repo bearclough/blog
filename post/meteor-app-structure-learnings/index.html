@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Bearclough">
+		<meta name="description" content="Describe your website">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>Meteor App Structure Learnings &middot; Beaclough</title>
+		<link rel="shortcut icon" href="http://www.stephaniefairclough.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/style.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/highlight.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/monosocialiconsfont.css">
+		
+	</head>
+
+<body>
+   <nav class="main-nav">
+	
+	
+		<a href='http://www.stephaniefairclough.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://www.stephaniefairclough.com/about'>About</a>
+	
+
+	
+</nav>
+
+	<section id="wrapper">
+		<article class="post">
+			<header>
+				<h1>Meteor App Structure Learnings</h1>
+				<h2 class="headline">July 31, 2015</h2>
+			</header>
+			<section id="post-body">
+				
+
+<p>Package based apps are easier to manage than monoliths.  All related functionality should be in its own package.</p>
+
+<h1 id="list-o-packages:593f67c5f0cbf1d5eb5562a0e19c051b">List O&rsquo; Packages</h1>
+
+<ul>
+<li><strong>Lib</strong> Contains global namespace and 3rd party dependencies.</li>
+<li><strong>Layout</strong> Includes shared views used by the entire application such as the layout, menu, footer, header, sidebar, navigation.  (HTML, CSS, &amp; JS) Allows you to switch site wide templates for different user types such as admins.  Site wide styling should be included here as well.</li>
+<li><strong>Homepage</strong> All files necessary for your homepage and publicly accessible sub pages such as pricing, contact, about pages etc. (HTML, CSS, &amp; JS).</li>
+<li><strong>User Management</strong> Login, signup, email verification, user profiles, linking accounts, SSO configurations, uploading profile pictures should all be grouped together.  If your app requires groups of users (followers, friends, family, organizations) the creation and management of these should be handled in a separate package that uses the user management package.</li>
+<li><strong>Admin</strong> If your app isn&rsquo;t trivial chances are you will need an admin package to manage user accounts, billing, permissions, roles, organizations, data, performance and so forth.  In addition, you may have end users that are admins not to the entire application but to their organization.  Its best to create a separate package for these admins.</li>
+<li><strong>Collections</strong> For each group of related collections include definitions, schemas, allow &amp; deny behavior, publications, templates (HTML, CSS, &amp; JS), and related meteor methods.  This allows you to import your collection behavior into other parent collections and features independently.</li>
+<li><strong>Features</strong> Specific to your app. Logical separation of app functionality.  Features will tie various collections together.  The feature package will import various collection and library packages.  Feature packages will include templates (HTML, CSS, &amp; JS) that allow users to interact with various collections and meteor methods that operate between collections.  Most importantly splitting out features should make each of them more testable and the interactions between features clearer.</li>
+<li><strong>Library</strong> Reusable in any app.  Generic packages that provide functionality of reusable chunks of code such as file pickers, video players, string manipulation libraries, RESTful service clients, ui frameworks, autoform generators, deployment helpers etc.  Essentially any group of related meteor methods and templates that can be reused across apps.  Occasionally feature packages can evolve into library packages.  And, to be honest that should be your goal when writing a feature library to make it as standalone as possible.  Almost all packages in atmosphere, I consider library packages.</li>
+</ul>
+
+<h1 id="routes:593f67c5f0cbf1d5eb5562a0e19c051b">Routes</h1>
+
+<p>Routes should be on a per package basis.  The home package will have the base route &ldquo;/&rdquo; and all other packages will have routes specific to them.  Taking it a step further each package should use the same route group with the prefix of the package name starting the route path.</p>
+
+<p>An example would be the admin package will have an admin route group and all routes will have &lsquo;/admin&rsquo; prepended to the path.</p>
+
+<h1 id="publications-subscriptions:593f67c5f0cbf1d5eb5562a0e19c051b">Publications &amp; Subscriptions</h1>
+
+<p><strong>Publications</strong> should be placed in the appropriate collection package.  Occasionally feature packages can create publications only they can use.</p>
+
+<p><strong>Subscriptions</strong> Can go either in feature packages or collection packages.</p>
+
+<h4 id="namespacing:593f67c5f0cbf1d5eb5562a0e19c051b">Namespacing</h4>
+
+<p>Create a namespace per package.  That way everything isn&rsquo;t in the global namespace it allows for visual separation of dependencies. Yes, I know it gets verbose and some of you out there disdain verbosity.  I believe verbosity with purpose leads to self documenting code that is easier to return to months later and thus easier to onboard new devs to.  Don&rsquo;t like it thats fine, you don&rsquo;t have to namespace, I just hope I never have to take over your project.</p>
+
+<h4 id="tests-i-know-buzkill:593f67c5f0cbf1d5eb5562a0e19c051b">Tests &hellip; I know buzkill</h4>
+
+<p>Yes my least favorite part of building things.  If you break your app into packages it will be easier to test.  Each package should have its own set of self contained tests.</p>
+
+<h4 id="round-up-of-prior-art:593f67c5f0cbf1d5eb5562a0e19c051b">Round Up Of Prior Art</h4>
+
+<p><strong>The Sacred Texts For Packages</strong></p>
+
+<ul>
+<li><a href="http://docs.meteor.com/#/full/packagedefinition">Meteor Docs</a></li>
+<li><a href="http://themeteorchef.com/recipes/writing-a-package/">The Meteor Chef - Writing A Package</a></li>
+</ul>
+
+<p><strong>Best Practices</strong></p>
+
+<ul>
+<li><a href="http://meteor.redandivory.com/#/">Red &amp; Ivory - Building Large Scale Meteor Apps Deck</a></li>
+<li><a href="https://github.com/cjsauer/meteor-fresh">Meteor Fresh</a></li>
+<li><a href="http://www.matb33.me/2013/09/05/meteor-project-structure.html">Matb33</a></li>
+<li><a href="http://www.telescopeapp.org/blog/telescope-package-based-architecture/">Telescope Package Based Architecture</a></li>
+<li><a href="http://experimentsinmeteor.com/package-based-architecture/">Converting To A Package Based Architecture</a></li>
+</ul>
+
+			</section>
+		</article>
+		<footer id="post-meta" class="clearfix">
+			<a href="https://twitter.com/stephfairclough">
+					<img class="avatar" src="http://www.stephaniefairclough.com/images/avatar.png">
+					<div>
+						<span class="dark">Bearclough</span>
+						<span>Living human being</span>
+					</div>
+				</a>
+		</footer>
+
+		
+
+		<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/tech-dream-job-advice/">Make Your Tech Dream Job A Reality<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2016-books-read/">2016 Books Read<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2015-books-read/">2015 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/meteor-app-structure-learnings/">Meteor App Structure Learnings<aside class="dates">Jul 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/cross-platform-mobile/">Cross Platform Mobile Musings<aside class="dates">Jun 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/websockets-meteor-future-of-development/">WebSockets, Meteor, and the Future of Development<aside class="dates">May 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2014-books-read/">2014 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+</ul>
+		<footer id="footer">
+    
+        
+<div id="social">
+    
+    <a class="symbol" href="https://github.com/bearclough">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/stephfairclough">
+        circletwitterbird
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Bearclough
+    
+    </p>
+</footer>
+
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.stephaniefairclough.com/js/main.js"></script>
+<script src="http://www.stephaniefairclough.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Bearclough">
+		<meta name="description" content="Describe your website">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>WebSockets, Meteor, and the Future of Development &middot; Beaclough</title>
+		<link rel="shortcut icon" href="http://www.stephaniefairclough.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/style.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/highlight.css">
+		<link rel="stylesheet" href="http://www.stephaniefairclough.com/css/monosocialiconsfont.css">
+		
+	</head>
+
+<body>
+   <nav class="main-nav">
+	
+	
+		<a href='http://www.stephaniefairclough.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='http://www.stephaniefairclough.com/about'>About</a>
+	
+
+	
+</nav>
+
+	<section id="wrapper">
+		<article class="post">
+			<header>
+				<h1>WebSockets, Meteor, and the Future of Development</h1>
+				<h2 class="headline">May 31, 2015</h2>
+			</header>
+			<section id="post-body">
+				
+
+<p>Note : The title may be a bit dramatic but I think WebSockets are primed to take over the world of development.  And, the idea of developing separate code for the server, web client, iOS client, and android versions of a product will become redundant.</p>
+
+<h2 id="restful-http:4d240865d4eb3ba7feecaecd590d0d95">RESTful HTTP</h2>
+
+<p>RESTful HTTP communication between a server and client is pretty much the norm now-a-days. SOAP (thankfully) has fallen to the side and become less common.  With RESTful communication the client requests data from the server and the server then responds.</p>
+
+<p>The key here is that the client needs to actively <strong>request</strong> data.  In order to get continuously updated data, the client pings the server every 30 secs, 10 secs, 1 sec, 1 millisecond etc. in order to get the latest data.  The server constantly fields these requests even if there isn&rsquo;t any updates.</p>
+
+<p>The client and the server need boilerplate code in order to establish this communication between the two.  Just look at any factory class on the client or controller class on the server.  It feels like half the time writing a client/server goes into getting and setting data on the client/server.  Handling any type of active synchronization is <em>tough problem</em>.  To make matters worse, writing code dealing with RESTful HTTP calls is about as boring as it gets.</p>
+
+<h2 id="websockets:4d240865d4eb3ba7feecaecd590d0d95">WebSockets</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/WebSockets">WebSockets</a> to the somewhat rescue &hellip;</p>
+
+<p>WebSockets allow for a two way always open connection between the client and the server.  This enables the client and server to communicate based on events rather than relying on polling.</p>
+
+<p>You may be asking &hellip; so what? does this even make a difference?  Let&rsquo;s look at an example chat application together.</p>
+
+<h4 id="chat-application-with-rest:4d240865d4eb3ba7feecaecd590d0d95">Chat Application With REST</h4>
+
+<ul>
+<li>Make a request every 1 second to check if there are any new messages.</li>
+<li>Make a request for every chat that needs to be posted to the chat root.</li>
+</ul>
+
+<p><strong>Pros</strong>
+- Don&rsquo;t need an open connection</p>
+
+<p><strong>Cons</strong>
+- Not realtime
+- Tons of code to achieve any sort of illusion of sync behavior</p>
+
+<h4 id="chat-application-with-websockets:4d240865d4eb3ba7feecaecd590d0d95">Chat Application With WebSockets</h4>
+
+<ul>
+<li>Open WebSocket between the client and server</li>
+<li>On the server handle messages from the client</li>
+<li>On the client handle updates from the server</li>
+</ul>
+
+<p><strong>Pros</strong>
+- <a href="http://realtimeconf.com/"><strong>REALTIME WEB</strong></a>
+- Easier event handling</p>
+
+<p><strong>Cons</strong>
+- Harder to scale</p>
+
+<h2 id="meteor-https-www-meteor-com:4d240865d4eb3ba7feecaecd590d0d95"><a href="https://www.meteor.com/">Meteor</a></h2>
+
+<p><strong>Mission Statement</strong></p>
+
+<p>&ldquo;Writing software is too hard and it takes too long. It&rsquo;s time for a new way to write software — especially application software, the user-facing software we use every day to talk to people and keep track of things.</p>
+
+<p>This new way should be radically simple. It should make it possible to build a prototype in a day or two, and a real production app in a few weeks. It should make everyday things easy, even when those everyday things involve hundreds of servers, millions of users, and integration with dozens of other systems. It should be built on collaboration, specialization, and division of labor, and it should be accessible to the maximum number of people.&rdquo;</p>
+
+<p>I think anyone who has ever written a piece of non trivial software can agree that writing good or even bad software is hard.  Meteor is a full stack JavaScript framework that encompasses both communication with a database as well as communication with the client (web, iOS, and even Android).</p>
+
+<p>It utilizes a host of modern web technologies and packages them into incredibly easy to use packages.</p>
+
+<ul>
+<li>WebSockets (DDP)</li>
+<li>MongoDB</li>
+<li>Cordova (app wrapping for iOS and Android)</li>
+<li>OAuth</li>
+<li>Handlebars (they call it spacebars)</li>
+</ul>
+
+<p>If you don&rsquo;t believe me try their <a href="https://www.meteor.com/install">tutorial</a> in under an hour you&rsquo;ll get a host of things that could take you weeks to build without Meteor.</p>
+
+<ul>
+<li>Server</li>
+<li>Communication with DB</li>
+<li>Web Client</li>
+<li>iOS Client</li>
+<li>Android Client</li>
+<li>Authentication (Google+, Facebook, LinkedIn, GitHub)</li>
+</ul>
+
+<p>Over the past couple of months, I built a grocery list app that allows people to shop together in the same store and have the list dynamically update. Meteor has allowed me to develop apps that I use in my day to day life.  They may not be very marketable (algorithmically generated knitting patterns), but I can quickly make the software I want to see in the world.</p>
+
+<h2 id="future-of-development:4d240865d4eb3ba7feecaecd590d0d95">Future of Development</h2>
+
+<p>Right now there&rsquo;s too much overhead to bring meaningful software into the world.  Just for an idea to be competitive in today&rsquo;s market you need &hellip;</p>
+
+<ul>
+<li>A server (RESTful HTTP web service or allows connections with WebSockets)</li>
+<li>An iOS app</li>
+<li>An Android app</li>
+<li>A web app</li>
+<li>Easily scalable</li>
+<li>Authentication (Google+ and Facebook are a must)</li>
+<li>A test suite</li>
+<li>An elegant design and intuitive user experience</li>
+</ul>
+
+<p>We all know how much time it takes to write all of that &hellip;.. months/years depends on how good you want everything to be. We all complain about bad software but it is crazy hard to write good software.</p>
+
+<p>I think overtime as mobile become even more prevalent a write once use everywhere or a learn once write everywhere technology stack will become ubiquitous.</p>
+
+<p>JavaScript as a language has potential.  Especially as frameworks such as Meteor and now native React gain popularity.  I admit that cross platform mobile is still no where close to native mobile.  But, Apple and Google will eventually have to cave for developers and give them a more efficient and simple experience for writing apps.</p>
+
+<p>I see native apps converging with cross platform (JavaScript) apps.  In order for technology to really help the world, it needs to be 100 times easier to write and make available to the public.</p>
+
+<h4 id="stay-tuned:4d240865d4eb3ba7feecaecd590d0d95">Stay Tuned</h4>
+
+<p>Posts to follow on the different ways to reduce development time for mobile apps and the pros and cons for each.  This a space where there is room for growth and improvement. And, I really want to explore it more.</p>
+
+			</section>
+		</article>
+		<footer id="post-meta" class="clearfix">
+			<a href="https://twitter.com/stephfairclough">
+					<img class="avatar" src="http://www.stephaniefairclough.com/images/avatar.png">
+					<div>
+						<span class="dark">Bearclough</span>
+						<span>Living human being</span>
+					</div>
+				</a>
+		</footer>
+
+		
+
+		<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/tech-dream-job-advice/">Make Your Tech Dream Job A Reality<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2016-books-read/">2016 Books Read<aside class="dates">Mar 19</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2015-books-read/">2015 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/meteor-app-structure-learnings/">Meteor App Structure Learnings<aside class="dates">Jul 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/cross-platform-mobile/">Cross Platform Mobile Musings<aside class="dates">Jun 30</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/websockets-meteor-future-of-development/">WebSockets, Meteor, and the Future of Development<aside class="dates">May 31</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="http://www.stephaniefairclough.com/post/2014-books-read/">2014 Books Read<aside class="dates">Dec 30</aside></a>
+        </li>
+        
+   
+</ul>
+		<footer id="footer">
+    
+        
+<div id="social">
+    
+    <a class="symbol" href="https://github.com/bearclough">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/stephfairclough">
+        circletwitterbird
+    </a>
+    
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Bearclough
+    
+    </p>
+</footer>
+
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.stephaniefairclough.com/js/main.js"></script>
+<script src="http://www.stephaniefairclough.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>
